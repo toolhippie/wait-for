@@ -3,10 +3,12 @@
     "extends": [
         "github>webhippie/renovate:docker"
     ],
-    "packageRules": [{
-        "groupName": "wait-for packages",
-        "matchDatasources": [
-            "github-tags"
-        ]
-    }]
+    "packageRules": [
+        {
+            "groupName": "wait-for packages",
+            "matchDatasources": [
+                "github-tags"
+            ]
+        }
+    ]
 }

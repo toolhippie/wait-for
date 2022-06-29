@@ -7,7 +7,7 @@ RUN git clone -b ${WAIT_FOR_VERSION} https://github.com/alioygur/wait-for.git /s
   cd /srv/app/src/github.com/alioygur/wait-for && \
   GO111MODULE=off go install
 
-FROM webhippie/alpine:latest
+FROM webhippie/alpine:3.15
 ENTRYPOINT [""]
 
 RUN apk update && \
