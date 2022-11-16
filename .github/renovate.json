@@ -7,7 +7,7 @@
         {
             "groupName": "wait-for packages",
             "matchDatasources": [
-                "github-tags"
+                "github-releases"
             ]
         }
     ]
