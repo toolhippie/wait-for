@@ -1,6 +1,6 @@
 # wait-for
 
-[![Docker Build](https://github.com/toolhippie/wait-for/workflows/docker/badge.svg)](https://github.com/toolhippie/wait-for/actions?query=workflow%3Adocker) [![GitHub Repo](https://img.shields.io/badge/github-repo-yellowgreen)](https://github.com/toolhippie/wait-for) [![Upstream Repo](https://img.shields.io/badge/upstream-repo-yellow)](https://github.com/alioygur/wait-for)
+[![Docker Build](https://github.com/toolhippie/wait-for/workflows/docker/badge.svg)](https://github.com/toolhippie/wait-for/actions?query=workflow%3Adocker) [![GitHub Repo](https://img.shields.io/badge/github-repo-yellowgreen)](https://github.com/toolhippie/wait-for) [![Upstream Repo](https://img.shields.io/badge/upstream-repo-yellow)](https://github.com/thegeeklab/wait-for)
 
 All these images are used for various scriptings, it's possible that any of
 these tools are updated randomly

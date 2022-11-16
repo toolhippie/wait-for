@@ -1,17 +1,12 @@
-FROM webhippie/golang:1.18 AS build
-
-# renovate: datasource=github-tags depName=alioygur/wait-for
-ENV WAIT_FOR_VERSION=master
-
-RUN git clone -b ${WAIT_FOR_VERSION} https://github.com/alioygur/wait-for.git /srv/app/src/github.com/alioygur/wait-for && \
-  cd /srv/app/src/github.com/alioygur/wait-for && \
-  GO111MODULE=off go install
-
 FROM webhippie/alpine:3.16
 ENTRYPOINT [""]
 
+# renovate: datasource=github-releases depName=thegeeklab/wait-for
+ENV WAIT_FOR_VERSION=0.2.0
+
 RUN apk update && \
   apk upgrade && \
+  apk add netcat-openbsd && \
+  curl -sSLo /usr/bin/wait-for https://raw.githubusercontent.com/thegeeklab/wait-for/v${WAIT_FOR_VERSION}/wait-for && \
+  chmod +x /usr/bin/wait-for && \
   rm -rf /var/cache/apk/*
-
-COPY --from=build /srv/app/bin/wait-for /usr/bin/
