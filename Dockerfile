@@ -2,7 +2,7 @@ FROM webhippie/alpine:3.17
 ENTRYPOINT [""]
 
 # renovate: datasource=github-releases depName=thegeeklab/wait-for
-ENV WAIT_FOR_VERSION=0.3.0
+ENV WAIT_FOR_VERSION=0.4.2
 
 RUN apk update && \
   apk upgrade && \
