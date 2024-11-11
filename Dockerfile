@@ -2,7 +2,7 @@ FROM ghcr.io/dockhippie/alpine:3.20
 ENTRYPOINT [""]
 
 # renovate: datasource=github-releases depName=thegeeklab/wait-for
-ENV WAIT_FOR_VERSION=0.4.2
+ENV WAIT_FOR_VERSION=0.4.3
 
 RUN apk update && \
   apk upgrade && \
